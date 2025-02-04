@@ -8,7 +8,8 @@ suffix=${suffix:0:18}
 # Set the necessary variables
 RESOURCE_GROUP="rg-dp100-l${suffix}"
 RESOURCE_PROVIDER="Microsoft.MachineLearning"
-REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
+#REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
+REGIONS="eastus"
 RANDOM_REGION=${REGIONS[$RANDOM % ${#REGIONS[@]}]}
 WORKSPACE_NAME="mlw-dp100-l${suffix}"
 COMPUTE_INSTANCE="ci${suffix}"
